@@ -1,14 +1,14 @@
 <template>
   <div id="home">
     <div id="split-1">
-      <figure id="couple-invest-fig">
-        <img alt="Vue logo" width="100%" src="@/assets/img/couple_investing.png">
+      <figure id="counance-fig">
+        <img alt="Vue logo" width="100%" src="@/assets/img/counance-icon.png">
       </figure>
     </div>
     <div id="split-2">
       <div>
-        <h1 class="Big-Title">Let Your Love <br> Be Wealth</h1>
-        <p>Start today with [proj name] to begin your journey toward a peaceful financial life.</p>
+        <h1 class="Big-Title">Let Your <span class="pink">Love</span> <br> Be <span class="gold">Wealth</span></h1>
+        <p>Start today with <span class="pink">Cou</span><span class="gold">nance</span> to begin your journey toward a peaceful financial life.</p>
       </div>
       <LinkButton
         :route="'/route'"
