@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="home">
+    <div id="split-1">
+      <figure id="couple-invest-fig">
+        <img alt="Vue logo" width="100%" src="@/assets/img/couple_investing.png">
+      </figure>
+    </div>
+    <div id="split-2">
+      <div>
+        <h1 class="Big-Title">Let Your Love <br> Be Wealth</h1>
+        <p>Start today with [proj name] to begin your journey toward a peaceful financial life.</p>
+      </div>
+      <LinkButton
+        :route="'/route'"
+        :label="'START NOW'"
+      />
+    </div>
   </div>
+  <footer>
+    <hr>
+  </footer>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import LinkButton from '@/components/LinkButton.vue'
 
-export default defineComponent({
-  name: 'HomeView',
+export default {
   components: {
-    HelloWorld
+    LinkButton
   }
-})
+}
 </script>
