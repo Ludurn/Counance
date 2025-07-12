@@ -16,9 +16,6 @@
       />
     </div>
   </div>
-  <footer>
-    <hr>
-  </footer>
 </template>
 
 <script lang="ts">
