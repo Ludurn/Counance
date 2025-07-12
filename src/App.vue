@@ -1,9 +1,13 @@
 <template>
-  <nav>
-    <NavBar
-    />
-  </nav>
-  <router-view/>
+  <div id="foremost">
+    <NavBar/>
+    <div id="rt-view">
+      <router-view/>
+    </div>
+  </div>
+  <footer>
+    <hr>
+  </footer>
 </template>
 
 <script lang="ts">

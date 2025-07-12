@@ -6,3 +6,8 @@
   background-repeat: no-repeat;
   display: inline-block;
 }
+
+@mixin fixedWidth($value) {
+  min-width: $value;
+  max-width: $value;
+}

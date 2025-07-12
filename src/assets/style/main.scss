@@ -1,9 +1,13 @@
+// abstracts
+@use './abstracts/transitions.scss';
+
 // base
 @use './base/base.scss';
 @use './base/typography.scss';
 @use './base/utilities.scss';
 
 // layout
+@use './layout/foremost.scss';
 @use './layout/navigation.scss';
 
 // pages
