@@ -4,14 +4,14 @@
     </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
+import { useRouter } from 'vue-router'
+import { defineProps } from 'vue'
 
-export default {
-  props: ['route', 'label'],
-  methods: {
-    redirect () {
-      this.$router.push(this.route)
-    }
-  }
+const props = defineProps<{ route: string, label: string }>()
+const router = useRouter()
+
+function redirect () {
+  router.push(props.route)
 }
 </script>
