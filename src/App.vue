@@ -2,7 +2,9 @@
   <div id="foremost">
     <NavBar/>
     <div id="rt-view">
-      <router-view/>
+      <transition name="fade">
+        <router-view/>
+      </transition>
     </div>
   </div>
   <footer>

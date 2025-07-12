@@ -2,7 +2,7 @@
   <div id="nav-bar">
     <div @click="toggleNavBar()" id="nav-icon"></div>
       <div class="nav-options" v-for="(route, i) in routes" :key="i">
-        <Transition name="fade">
+        <Transition name="slide-fade">
           <LinkButton v-if="show" :route="route.path" :label="route.name" />
         </Transition>
       </div>
@@ -22,7 +22,8 @@ export default defineComponent({
       routes: [
         { name: 'INTRO', path: '/' },
         { name: 'HOME', path: '/page1' },
-        { name: 'DASHBOARD', path: '/page2' }
+        { name: 'DASHBOARD', path: '/page2' },
+        { name: 'CONFIG', path: '/config' }
       ],
       show: false
     }
