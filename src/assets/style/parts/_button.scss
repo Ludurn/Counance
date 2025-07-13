@@ -12,3 +12,13 @@
         color: $gold;
     }
 }
+
+.option-button {
+    @extend .link-button;
+    width: fit-content;
+    font-size: x-large;
+
+    &:hover {
+        color: $pink;
+    }
+}

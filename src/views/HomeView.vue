@@ -11,7 +11,7 @@
         <p>Start today with <span class="pink">Cou</span><span class="gold">nance</span> to begin your journey toward a peaceful financial life.</p>
       </div>
       <LinkButton
-        :route="'/route'"
+        :route="'/entry-flow'"
         :label="'START NOW'"
       />
     </div>
