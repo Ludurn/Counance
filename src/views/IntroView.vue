@@ -1,5 +1,5 @@
 <template>
-  <div id="home">
+  <div id="intro">
     <div id="split-1">
       <figure id="counance-fig">
         <img alt="Vue logo" width="100%" src="@/assets/img/counance-icon.png">
