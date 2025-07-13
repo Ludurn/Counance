@@ -1,4 +1,4 @@
-# casal-financas
+# counance
 
 ## Project setup
 ```
