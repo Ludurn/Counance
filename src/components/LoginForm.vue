@@ -1,7 +1,7 @@
 <template>
     <form id="entry-form">
         <FormInput v-for="(input, i) in inputs" :key="i" :label="input.label" :type="input.type" :name="input.name" :placeholder="input.placeholder" />
-        <input type="submit" value="Submit" />
+        <input class="submit" type="submit" name="login" value="LOG IN" />
     </form>
 </template>
 

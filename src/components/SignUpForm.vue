@@ -1,7 +1,7 @@
 <template>
     <form id="entry-form">
         <FormInput v-for="(input, i) in inputs" :key="i" :label="input.label" :type="input.type" :name="input.name" :placeholder="input.placeholder" />
-        <input type="submit" value="Submit" />
+        <input class="submit" type="submit" name="sign-up" value="SUBMIT" />
     </form>
 </template>
 
@@ -13,7 +13,7 @@ const inputs: Array<{ label: string, type: string, name: string, placeholder: st
     label: 'Username',
     type: 'text',
     name: 'name-input',
-    placeholder: 'Your name'
+    placeholder: 'Your username'
   },
   {
     label: 'Email',
@@ -31,7 +31,7 @@ const inputs: Array<{ label: string, type: string, name: string, placeholder: st
     label: 'Confirm password',
     type: 'password',
     name: 'email-input',
-    placeholder: 'Your e-mail'
+    placeholder: 'Your password'
   }
 ]
 </script>

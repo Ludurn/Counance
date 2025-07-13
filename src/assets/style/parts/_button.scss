@@ -21,4 +21,9 @@
     &:hover {
         color: $pink;
     }
+
+    &.selected {
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.6);
+        color: $pink;
+    }
 }

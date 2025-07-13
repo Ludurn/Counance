@@ -1,0 +1,21 @@
+@use '../abstracts/variables.scss' as *;
+
+input {
+    font-family: 'Josefin Sans';
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.6);
+    background-color: $dark1;
+    color: $white1;
+    padding: 0.7rem;
+    font-size: 0.95rem;
+
+    &.submit {
+        cursor: pointer;
+        transition: all 500ms;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+}

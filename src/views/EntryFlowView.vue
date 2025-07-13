@@ -1,12 +1,15 @@
 <template>
+  <div id="entry-top">
     <div id="entry-option">
-      <OptionButton @click="toggleOption(i, option.isSelect)" v-for="(option, i) in options" :key="i" :label="option.label" />
+      <OptionButton @click="toggleOption(i)" v-for="(option, i) in options" :key="i" :label="option.label" :class="{ 'selected': option.isSelect }" />
     </div>
-    <h1 class="Big-Title"></h1>
-    <transition name="fade" mode="out-in">
-      <SignUpForm v-if="options[0].isSelect" />
-      <LoginForm v-else-if="options[1].isSelect" />
-    </transition>
+    <p>Welcome to Counance! We're so glad you're here. Sign up or log in to get started.</p>
+  </div>
+  <h1 class="Big-Title"></h1>
+  <transition name="fade" mode="out-in">
+    <SignUpForm v-if="options[0].isSelect" />
+    <LoginForm v-else-if="options[1].isSelect" />
+  </transition>
 </template>
 
 <script setup lang="ts">
@@ -26,12 +29,12 @@ const options = ref([
   }
 ])
 
-function toggleOption (optionIndex: number, optionSelected: boolean) {
+function toggleOption (optionIndex: number) {
   options.value = options.value.map((option, index) => {
     let newIsSelect: boolean
 
     if (index === optionIndex) {
-      newIsSelect = !optionSelected
+      newIsSelect = true
     } else {
       newIsSelect = false
     }
