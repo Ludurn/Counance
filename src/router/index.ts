@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import IntroView from '../views/IntroView.vue'
 import EntryFlowView from '@/views/EntryFlowView.vue'
+import HomeView from '@/views/HomeView.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -12,6 +13,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/entry-flow',
     name: 'entry-flow',
     component: EntryFlowView
+  },
+  {
+    path: '/home',
+    name: 'home',
+    component: HomeView
   }
 ]
 

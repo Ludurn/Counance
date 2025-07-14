@@ -21,7 +21,7 @@ export default defineComponent({
     return {
       routes: [
         { name: 'INTRO', path: '/' },
-        { name: 'HOME', path: '/page1' },
+        { name: 'HOME', path: '/home' },
         { name: 'DASHBOARD', path: '/page2' },
         { name: 'CONFIG', path: '/config' }
       ],

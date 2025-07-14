@@ -11,3 +11,11 @@
   min-width: $value;
   max-width: $value;
 }
+
+@mixin featureBackground($imgName) {
+  background-image: url("@/assets/img/"+$imgName);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}

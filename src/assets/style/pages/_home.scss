@@ -1,0 +1,78 @@
+@use '../abstracts/mixins.scss' as *;
+@use '../abstracts/variables.scss' as *;
+
+#feature-box {
+    display: flex;
+}
+
+#feature-info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 10%;
+    gap: 4rem;
+    max-width: 33rem;
+    text-align: center;
+
+    p {
+        padding: 0% 5%;
+        text-align: justify;
+    }
+}
+
+#feature-display {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: fit-content;
+    gap: 0.3rem;
+    margin-left: auto;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    padding-top: 43rem;
+    width: 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: all 650ms;
+
+    &:hover {
+        padding-top: 40rem;
+        width: calc(10rem + 5rem);
+        background-color: rgba(0, 0, 0, 0.2);
+
+        &>h1 {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    &>h1 {
+        height: fit-content;
+        rotate: -90deg;
+        color: rgba(255, 255, 255, 0.5);
+        transition: all 650ms;
+    }
+}
+
+@for $i from 0 through 3 {
+    $img: "horoscope.png";
+
+    @if ($i == 0) {
+        $img: "horoscope.png";
+    }
+    @else if ($i == 1) {
+        $img: "retirement.png";
+    }
+    @else if ($i == 2) {
+        $img: "compounding.png";
+    }
+    @else if ($i == 3) {
+        $img: "infladjust.png";
+    }
+
+    #feature-#{$i} {
+        @include featureBackground($img);
+    }
+}
