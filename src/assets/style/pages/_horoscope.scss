@@ -1,0 +1,9 @@
+@use '../abstracts/animations.scss';
+
+#constellation {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 18rem;
+    justify-content: center;
+    opacity: 0.3;
+}
